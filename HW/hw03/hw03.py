@@ -25,6 +25,19 @@ def num_eights(n):
     True
     """
     "*** YOUR CODE HERE ***"
+    num,num_without=n//10,n%10
+    if n==8:
+        return 1
+    if n<=9:
+        return 0
+    if num_without==8:
+        return 1 + num_eights(num)
+    else:
+        return 0 + num_eights(num)
+    
+        
+        
+    
 
 
 def digit_distance(n):
